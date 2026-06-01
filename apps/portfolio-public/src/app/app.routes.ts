@@ -1,0 +1,7 @@
+import { Routes } from '@angular/router';
+
+export const routes: Routes = [
+  { path: '', redirectTo: '/projects', pathMatch: 'full' },
+  { path: 'projects', loadComponent: () => import('./projects/project-list/project-list.component').then(m => m.ProjectListComponent) },
+  { path: 'projects/:id', loadComponent: () => import('./projects/project-detail/project-detail.component').then(m => m.ProjectDetailComponent) },
+];

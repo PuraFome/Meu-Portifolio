@@ -1,0 +1,11 @@
+module.exports = {
+  displayName: 'api',
+  preset: '../../jest.preset.js',
+  testEnvironment: 'node',
+  coverageDirectory: '../../coverage/apps/api',
+  coverageThreshold: {
+    global: {
+      lines: 70
+    }
+  }
+};
